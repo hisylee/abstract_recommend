@@ -64,7 +64,8 @@ if submitted and user_input:
 
     top_result = get_query_sim_top_k(user_input, model, df, top_k)
 
-    result = df.iloc[top_result[1].numpy(), :][['Year', 'Name', 'Title', 'Abstract']]
+#    result = df.iloc[top_result[1].numpy(), :][['Year', 'Name', 'Title', 'Abstract']]
+    result = df.iloc[top_result[1], :][['Year', 'Name', 'Title', 'Abstract']]
 
     st.dataframe(result)
 
