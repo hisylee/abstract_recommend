@@ -26,7 +26,8 @@ def cached_model():
     model = SentenceTransformer('sentence-transformers/distiluse-base-multilingual-cased-v2')
     return model
 
-@st.cache(allow_output_mutation=True)
+#@st.cache(allow_output_mutation=True)
+@st.cache_data
 def get_dataset():
     #df = pd.read_csv('rheology_dataset_em.csv')
     df = pd.read_excel('abstract_em.xlsx', header = 0)
