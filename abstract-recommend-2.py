@@ -20,7 +20,8 @@ import json
 
 # pip list --format=freeze > requirements.txt
 
-@st.cache(allow_output_mutation=True)
+#@st.cache(allow_output_mutation=True)
+@st.cache_data
 def cached_model():
     model = SentenceTransformer('sentence-transformers/distiluse-base-multilingual-cased-v2')
     return model
