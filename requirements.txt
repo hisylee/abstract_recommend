@@ -1,16 +1,16 @@
-streamlit>=1.25
 pandas>=2.0
 numpy>=1.24
 openpyxl>=3.1
 
-torch>=2.0
-sentence-transformers==2.2.2
 tokenizers>=0.13
 sentencepiece>=0.1.99
-transformers==4.28.1
 huggingface_hub==0.16.4
 
 scikit-learn>=1.2
 scipy>=1.10
 tqdm>=4.65
 regex>=2023.5.5
+streamlit
+sentence-transformers==2.2.2
+transformers==4.36.2
+torch
