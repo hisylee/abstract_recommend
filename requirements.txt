@@ -4,3 +4,4 @@ torch
 
 sentence-transformers==2.2.2
 huggingface_hub<0.17
+openpyxl
